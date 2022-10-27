@@ -11,3 +11,6 @@ app.route('/')
 
 http.createServer(app).listen(80);
 https.createServer(app).listen(443);
+
+// export for google cloud function
+exports.app = app;
